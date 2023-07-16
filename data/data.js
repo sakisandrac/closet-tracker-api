@@ -1,58 +1,92 @@
 module.exports = [
   {
-    pants: [
+    closet: {
+      pants: [
+        {
+          id: 1,
+          image: "",
+          category: "",
+          notes: ""
+        }
+      ],
+      tops: [
+        {
+          id: 1,
+          image: "",
+          category: "",
+          notes: ""
+        }
+      ],
+      skirts: [
+        {
+          id: 1,
+          image: "",
+          category: "",
+          notes: ""
+        }
+      ],
+      onePieces: [
+        {
+          id: 1,
+          image: "",
+          category: "",
+          notes: ""
+        }
+      ],
+      shoes: [
+        {
+          id: 1,
+          image: "",
+          category: "",
+          notes: ""
+        }
+      ],
+      bags: [
+        {
+          id: 1,
+          image: "",
+          category: "",
+          notes: ""
+        }
+      ],
+      accessories: [
+        {
+          id: 1,
+          image: "",
+          category: "",
+          notes: ""
+        }
+      ],
+      outerwear: [
+        {
+          id: 1,
+          image: "",
+          category: "",
+          notes: ""
+        }
+      ],
+      misc: [
+        {
+          id: 1,
+          image: "",
+          category: "",
+          notes: ""
+        }
+      ],
+    },
+    outfits: [
       {
-        id: 1,
-        image: ""
+        id: "",
+        pieces: [
+          {
+            id: "",
+            image: "",
+            notes: "",
+            category: ""
+          }
+        ],
+        notes: ""
       }
-    ],
-    shirts: [
-      {
-        id: 1,
-        image: ""
-      }
-    ],
-    skirts: [
-      {
-        id: 1,
-        image: ""
-      }
-    ],
-    onePieces: [
-      {
-        id: 1,
-        image: ""
-      }
-    ],
-    shoes: [
-      {
-        id: 1,
-        image: ""
-      }
-    ],
-    bags: [
-      {
-        id: 1,
-        image: ""
-      }
-    ],
-    accessories: [
-      {
-        id: 1,
-        image: ""
-      }
-    ],
-    outerwear: [
-      {
-        id: 1,
-        image: ""
-      }
-    ],
-    misc: [
-      {
-        id: 1,
-        image: ""
-      }
-    ],
-  } 
+    ]
+  }
 ]

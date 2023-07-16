@@ -18,8 +18,8 @@ app.get('/api/v1/data', (req, res) => {
 });
 
 app.post('/api/v1/data', (req, res) => {
-  const { title, description, id } = req.body;
-  const requiredProperties = ['title', 'description'];
+  const { image, category, id, notes } = req.body;
+  const requiredProperties = ['image', 'category', 'id'];
 
   // for (let requiredParameter of requiredProperties) {
   //   if (req.body[requiredParameter] === undefined) {
