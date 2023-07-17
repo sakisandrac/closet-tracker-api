@@ -38,6 +38,7 @@ app.post('/api/v1/data/closet', (req, res) => {
   }
 
 //will need to change push if more than 1 user
+if(!app.locals.data[0].closet[category].some(item => item.id === id)){
     app.locals.data[0].closet[category].push({ id, image, category, notes })
     res.status(201).json({ 
       message: `${id} Item added!`,
@@ -48,6 +49,7 @@ app.post('/api/v1/data/closet', (req, res) => {
         notes,
       }
     });
+  }
     console.log(newData)
 })
 
