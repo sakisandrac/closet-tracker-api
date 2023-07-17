@@ -12,39 +12,43 @@ app.locals = {
 app.use(cors());
 app.use(express.json());
 
-app.get('/api/v1/data', (req, res) => {
+app.get('/api/v1/data/closet', (req, res) => {
   const { data } = app.locals;
-  res.status(200).json({ data });
+  const closetData = data[0].closet 
+  res.status(200).json({ closetData });
 });
 
-app.post('/api/v1/data', (req, res) => {
+app.get('/api/v1/data/outfits', (req, res) => {
+  const { data } = app.locals;
+  const outfitData = data[0].outfits
+  res.status(200).json({ outfitData });
+});
+
+
+app.post('/api/v1/data/closet', (req, res) => {
   const { image, category, id, notes } = req.body;
   const requiredProperties = ['image', 'category', 'id'];
 
-  // for (let requiredParameter of requiredProperties) {
-  //   if (req.body[requiredParameter] === undefined) {
-  //     return res.status(422).json({
-  //       message: `You are missing a required parameter of ${requiredParameter}`
-  //     });
-  //   }
-  // }
+  for (let requiredParameter of requiredProperties) {
+    if (req.body[requiredParameter] === undefined) {
+      return res.status(422).json({
+        message: `You are missing a required parameter of ${requiredParameter}`
+      });
+    }
+  }
 
-    // Check that the userID is a number
-    // if (typeof userID !== 'number') {
-    //   return res.status(422).json({
-    //     message: `Invalid userID data type. userID must be a number.`
-    //   })
-    // }
-
-    app.locals.data.push({ id, title, description })
+//will need to change push if more than 1 user
+    app.locals.data[0].closet[category].push({ id, image, category, notes })
     res.status(201).json({ 
-      message: "",
-      // newData: {
-      //   id, 
-      //   title,
-      //   description,
-      // }
+      message: `${id} Item added!`,
+      newData: {
+        id, 
+        image,
+        category,
+        notes,
+      }
     });
+    console.log(newData)
 })
 
 // app.delete('/api/v1/data/:id', (req, res) => {

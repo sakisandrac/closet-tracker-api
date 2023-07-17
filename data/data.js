@@ -3,73 +3,73 @@ module.exports = [
     closet: {
       pants: [
         {
-          id: 1,
-          image: "",
-          category: "",
+          id: "pants-ex-1",
+          image: "./pants.JPG",
+          category: "pants",
           notes: ""
         }
       ],
       tops: [
         {
-          id: 1,
-          image: "",
-          category: "",
+          id: "tops-ex-1",
+          image: "./top.JPG",
+          category: "tops",
           notes: ""
         }
       ],
       skirts: [
         {
-          id: 1,
-          image: "",
-          category: "",
+          id: "skirts-ex-1",
+          image: "./skirt.JPG",
+          category: "skirts",
           notes: ""
         }
       ],
       onePieces: [
         {
-          id: 1,
-          image: "",
-          category: "",
+          id: "onepiece-ex-1",
+          image: "./romper.JPG",
+          category: "onePieces",
           notes: ""
         }
       ],
       shoes: [
         {
-          id: 1,
-          image: "",
-          category: "",
+          id: "shoes-ex-1",
+          image: "./shoes.JPG",
+          category: "shoes",
           notes: ""
         }
       ],
       bags: [
         {
-          id: 1,
-          image: "",
-          category: "",
+          id: "bag-ex-1",
+          image: "./bag.JPG",
+          category: "bags",
           notes: ""
         }
       ],
       accessories: [
         {
-          id: 1,
-          image: "",
-          category: "",
+          id: "accessories-ex-1",
+          image: "./necklace.jpg",
+          category: "accessories",
           notes: ""
         }
       ],
       outerwear: [
         {
-          id: 1,
-          image: "",
-          category: "",
+          id: "outerwear-ex-1",
+          image: "./jacket.JPG",
+          category: "outerwear",
           notes: ""
         }
       ],
       misc: [
         {
-          id: 1,
-          image: "",
-          category: "",
+          id: "misc-ex-1",
+          image: "./hat.JPG",
+          category: "misc",
           notes: ""
         }
       ],
