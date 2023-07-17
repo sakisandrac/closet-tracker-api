@@ -37,20 +37,20 @@ app.post('/api/v1/data/closet', (req, res) => {
     }
   }
 
-//will need to change push if more than 1 user
-if(!app.locals.data[0].closet[category].some(item => item.id === id)){
+  //will need to change push if more than 1 user
+  if (!app.locals.data[0].closet[category].some(item => item.id === id)) {
     app.locals.data[0].closet[category].push({ id, image, category, notes })
-    res.status(201).json({ 
+    res.status(201).json({
       message: `${id} Item added!`,
       newData: {
-        id, 
+        id,
         image,
         category,
         notes,
       }
     });
   }
-    console.log(newData)
+  console.log(newData)
 })
 
 // app.delete('/api/v1/data/:id', (req, res) => {
